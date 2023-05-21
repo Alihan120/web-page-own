@@ -11,13 +11,14 @@ li{
     list-style-type: none;
 }
 body{
-
+    background-color: rgba(249, 253, 252, 0.476);
 }
 .header{
     display: flex;
     justify-content:space-between;
     background-color: rgba(3, 3, 3, 0.805);
-    border-bottom: 3px solid rgb(31, 219, 166);
+    border-bottom: 3px solid rgb(21, 79, 136);
+    
 }
 .header .description{
     display: flex;
@@ -116,7 +117,7 @@ body{
 .content{
     display: flex;
     flex-direction: column;
-    height: 36vh;
+    
 }
 .content .content__top{
     background-color: rgba(3, 3, 3, 0.807);
@@ -149,15 +150,227 @@ body{
     color: rgb(233, 236, 235);
     font-weight: 600;
     font-size: 0.8rem;
+    margin-right: 2rem;
 }
-.grid-container{
-    height: 1000px;
+.content__mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content__mid--title{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.content__mid--title h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: rgb(25, 15, 15);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 3px 3px rgb(36, 31, 31);
+    padding: 1rem;
+    border: 3px solid rgba(10, 10, 10, 0.49);
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.487);
+    background-color: rgba(245, 245, 245, 0.774);
+}
+.content__mid--images{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4rem;
+}
+.content__mid--images .image1{
+    height: 500px;
+    height: 400px;
+    width: 30%;
+    border: 3px solid rgb(10, 10, 10);
+    box-shadow: 3px 3px 3px rgb(10, 10, 10, .532);
+    border-radius: 5px;
+    background-image: url(./images/teak-deck-3.jpeg);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:  1rem 0.5rem;
+}
+.content__mid--images .image1:hover{
+    transform: scale(1.4,1);
+    width: 50%;
+    transition: 0.7s;
+    background-position: center;
+}
+.content__mid--images .image2{
+    height: 400px;
+    width: 30%;
+    border: 3px solid rgb(10, 10, 10);
+    box-shadow: 3px 3px 3px rgb(10, 10, 10, .532);
+    border-radius: 5px;
+    background-image: url(./images/2577e5_8381763ba3c549ddb0e91083302e442a~mv2.webp);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:  1rem 0.5rem;
+}
+.content__mid--images .image2:hover{
+    transform: scale(1.4,1);
+    width: 50%;
+    background-position: center;
+    transition: 0.7s;
+}
+.content__mid--images .image3{
+    height: 400px;
+    width: 30%;
+    border: 3px solid rgb(10, 10, 10);
+    box-shadow: 3px 3px 3px rgb(10, 10, 10, .532);
+    border-radius: 5px;
+    background-image: url(./images/192155873_528754381472397_2469147955617388627_n.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 1rem 0.5rem;
+}
+.content__mid--images .image3:hover{
+    transform: scale(1.4,1);
+    width: 50%;
+    background-position: center;
+    transition: 0.7s;
+}
+.content__mid--images .image4{
+    height: 400px;
+    width: 30%;
+    border: 3px solid rgb(10, 10, 10);
+    box-shadow: 3px 3px 3px rgb(10, 10, 10, .532);
+    border-radius: 5px;
+    background-image: url(./images/331522065_1219838868926950_4830669333109634086_n.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 1rem 0.5rem;
+}
+.content__mid--images .image4:hover{
+    transform: scale(1.4,1);
+    width: 50%;
+    background-position: center;
+    transition: 0.7s;
+}
+.content__mid--images .image5{
+    height: 400px;
+    width: 30%;
+    border: 3px solid rgb(10, 10, 10);
+    box-shadow: 3px 3px 3px rgb(10, 10, 10, .532);
+    border-radius: 5px;
+    background-image: url(./images/240234858_3064523000446623_8398467457772032026_n.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 1rem 0.5rem;
+}
+.content__mid--images .image5:hover{
+    transform: scale(1.4,1);
+    width: 50%;
+    background-position: center;
+    transition: 0.7s;
+}
+.mid__description{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.203);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mid__description h2{
+    font-weight: 800;
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgba(165, 42, 42, 0.532);
+    padding: 1rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border: 1px solid black;
+}
+
+.content__bottom{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto;
+    margin: 2rem 2rem;
+    justify-items: center;
+    background-color: rgba(245, 245, 245, 0.774);
+    border: 3px solid rgba(10, 10, 10, 0.49);
+    box-shadow: 3px 3px 3px rgb(10, 10, 10, .532);
+    padding: 1rem;
+    
+}
+.content__bottom .item1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.content__bottom .item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.content__bottom .item2 .desc{
+    margin-left: 2rem;
+}
+.content__bottom .desc h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.content__bottom .desc p{
+    font-size: 1.2rem;
+}
+.footer{
+    background-color: rgba(0, 0, 0, 0.881);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-top: 4px solid brown;
+}
+.footer p{
+    color: white;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
     background-color: rgba(81, 19, 21, 0.207);
 }
-.grid-container div{
+#about-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr ;
+    background-color: rgba(176, 138, 103, 0.207);
+    gap: 0.5rem;
+}
+#about-container .about-item{
     height: 500px;
+}
+#about-container #about-item4{
+    background-image: url(./images/about2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#about-container #about-item5{
+    background-image: url(./images/abut.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-container div{
+    height: 250px;
     border: 1px solid black;
     border-radius: 10px;
 }
