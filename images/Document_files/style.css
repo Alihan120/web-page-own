@@ -470,7 +470,6 @@ body{
     justify-content: center;
     align-items: center;
     margin: 2rem;
-    margin-bottom: 5rem;
 }
 .about-us .about-article{
     max-width: 1400px;
@@ -594,76 +593,17 @@ body{
     cursor: pointer;
 }
 .iletisim{
-    height: 80.8vh;
+    height: 500px;
+    background-color: rgba(165, 42, 42, 0.812);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.iletisim__info h2{
-    font-size: 2rem;
-    color: white;
-    padding: 1rem 4rem;
-    background-color: rgba(165, 42, 42, 0.81);
-    border-radius: 5px 5px 0 0;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.423);
-    text-shadow: 2px 2px 2px black;
 }
 .iletisim .iletisim__form form{
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 1rem;
-    padding: 6rem;
-    border-radius: 5px;
-    background-color: rgba(165, 42, 42, 0.814);
-    
 }
-.iletisim .iletisim__form input{
-    height: 45px;
-    width: 300px;
-    border-radius: 5px;
-    outline: none;
-    border: 1px solid rgba(0, 0, 0, 0.314);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.352);
-    font-size: 1.2rem;
-    padding-left: 1rem;
-}
-.iletisim .iletisim__form select{
-    height: 45px;
-    width: 300px;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.314);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.352);
-}
-.iletisim .iletisim__form textarea{
-    height: 120px;
-    padding-left: 1rem;
-    padding-top: 0.5rem;
-    grid-column: 1 /span 2;
-    width: 100%;
-    outline: none;
-    border: 1px solid rgba(0, 0, 0, 0.314);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.352);
-    border-radius: 5px;
-    resize: none;
-    font-size: 1.2rem;
-}
-.iletisim .iletisim__form button{
-    height: 40px;
-    width: 40%;
-    margin-right: auto;
-    margin-left: auto;
-    grid-column: 1/span 2;
-    background-color: rgba(221, 178, 22, 0.478);
-    border: none;
-    color: rgb(254, 252, 252);
-    border-radius: 5px;
-    font-size: 1.2rem;
-    font-weight: 800;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.536);
-}
-.iletisim .iletisim__form button:hover{
-    background-color: rgba(221, 178, 22, 0.843);
-    cursor: pointer;
+.iletisim .iletisim__form form textarea{
+    grid-template-columns: 1 / span 2;
 }
